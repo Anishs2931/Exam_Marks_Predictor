@@ -1,6 +1,9 @@
 from joblib import load
 import streamlit as st
 import os
+import sklearn
+import numpy 
+import pandas
 
 model_path=os.path.join(os.path.dirname(__file__),"Student_Performance_predictor")
 model=load(model_path)
