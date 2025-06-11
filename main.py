@@ -1,7 +1,9 @@
 from joblib import load
 import streamlit as st
+import os
 
-model=load("Student_Performance_predictor")
+model_path=os.path.join(os.path.dirname(__file__),"Student_Performance_predictor")
+model=load(model_path)
 
 st.title("Student Exam Marks Predictor")
 st.subheader("Enter the below details")
